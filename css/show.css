@@ -1,0 +1,55 @@
+.showBanner {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 30;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen--show {
+    width: 95%;
+    height: 285px;
+    margin: auto;
+    background-image: url("../img/bannerVidas.png");
+    background-size: cover;
+  }
+  .imagen--show .imgClose {
+    width: 25px;
+    height: 25px;
+    transform: translateY(-40px);
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .imagen--show .imgClose:hover {
+    height: 26px;
+  }
+  
+  .active--banner {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s ease-in;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .imagen--show {
+      width: 75%;
+      height: 450px;
+    }
+  }
+  @media screen and (min-width: 950px) {
+    .imagen--show {
+      width: 40%;
+      height: 450px;
+    }
+  }
+  
+  /*# sourceMappingURL=show.css.map */
+  

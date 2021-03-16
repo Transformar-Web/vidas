@@ -1,0 +1,106 @@
+:root{
+    --color-important: #20c997;
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Nunito', sans-serif;
+}
+
+/* mobile first */
+.nav{
+    background-color: var(--color-important);
+    height: 65px;
+}
+
+.img--logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* .name--menu{
+    width: 50%;
+    font-family: var(--font2);
+    font-weight: bold;
+    text-decoration: 5px  underline;
+    padding: 5px;
+} */
+
+.logo--vidas{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: gray; */
+}
+
+.content--ham{
+    width: 50%;
+}
+
+.content--enlaces{
+    background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in;
+    color: var(--font1);
+    text-transform: uppercase;
+}
+
+.enlaces{
+    color: var(--color-important);
+}
+
+.enlaces:hover{
+    background-color: var(--color-important);
+    color: #ffffff;
+}
+
+.active-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* media querie tablet extra large */
+@media screen and (min-width:700px){
+    /* .content--enlaces{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .content--ham{
+        display: none;
+    } */
+}
+
+/* media querie deskto y laptops */
+@media screen and (min-width:1000px){
+
+    .nav{
+        height: 80px;
+    }
+
+    .content--enlaces{
+        visibility: visible;
+        opacity: 1;
+        background-color: transparent;
+    }
+
+    .enlaces{
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .enlaces:hover{
+        background-color: #ffffff ;
+        color:var(--color-important);
+        border-radius: 4px;
+    }
+}
+
+ 

@@ -1,0 +1,80 @@
+.fixedContainer {
+  width: 80px;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 8;
+}
+@media screen and (min-width: 650px) {
+  .fixedContainer {
+    height: 110px;
+    bottom: 330px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .fixedContainer {
+    right: 10px;
+    bottom: 0;
+  }
+}
+.fixedContainer__contentWhatsApp {
+  width: 60px;
+  height: 60px;
+  margin: 12px auto;
+  border-radius: 50%;
+  background-color: #20c997;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixedContainer__icons {
+  width: 65%;
+}
+.fixedContainer__contentNoti {
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background-color:#20c997;
+  /* border: 3px solid white; */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulsar 1s ease-in infinite;
+}
+
+@media screen and (min-width: 650px) {
+  .fixedContainer__contentNoti {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@keyframes pulsar {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+  }
+}
+
+/* /* .tippy-box[data-theme~=green] {
+  background-color: #08BA1A;
+  color: white;
+  padding: 5px;
+  font-size: 1.1rem;
+} */
+
+.tippy-box[data-theme~=white] {
+  background-color: white;
+  color: #20c997;
+  padding: 5px;
+  font-size: 1.2rem;
+} 
+
+/*# sourceMappingURL=fixed.css.map */

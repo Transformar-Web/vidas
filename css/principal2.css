@@ -1,0 +1,245 @@
+:root{
+    --color-important: #20c997;
+    --color-important2: #f4f8fb;
+    --color-important-transparent: #20c9968f;
+    --color-transparent: rgba(0,0,0,0.3) ;
+    --color-transparent2: rgba(0,0,0,0.5) ;
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Nunito', sans-serif;
+ }
+
+ 
+
+/* .section--about{
+    height: auto;
+} */
+
+ /* section de collapse  */
+ .section--collapse{
+     /* margin-top: 40px; */
+     height: auto;
+ }
+
+ .collapse--icon{
+     font-size: 2rem;
+ }
+ .h4--collapse{
+     width: 100%;
+     cursor: pointer;
+ }.h4--collapse:hover{
+     text-decoration: underline;
+ }
+
+.collapse--content{
+    height: 0;
+    /* opacity: 0; */
+    overflow: hidden;
+}
+
+/* agregar clase dinamica classList.add() */
+.collapse--content-active{
+    height: auto;
+    /* opacity: 1; */
+    transition: 1s ease-in-out;
+}
+/* ------------------------------------- */
+
+/* section doctors */
+.section--doctors {
+   width: 100%;
+   height: auto;
+   margin-top: 30px;
+}
+.bgImg--doctor{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.info--doctor{
+    width: 65%;
+    height: auto;
+    margin: auto;
+}
+.info--p{
+    color: gray;
+    text-decoration: 1px underline;
+    font-size: 1.1rem;
+}
+.icon--dr{
+    color: white;
+    background-color: var(--color-important-transparent);
+    font-size: 1.2rem;
+    margin: 0 3px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icon--dr:hover{
+    background-color: var(--color-important);
+}
+/* -------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+
+/* section labs */
+
+.section--labs{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-important2);
+}
+.labs--text{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+.labs--content{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    
+}
+.content--item{
+    width: 100%;
+    height: auto;
+}
+.content--labImg{
+   width: 47%;
+   height: 150px;
+   margin: 3px ;
+   object-fit: cover;
+   border-radius: 3px;
+   border-bottom: 8px solid var(--color-important);
+}
+
+.labs-icon{
+   color: var(--color-important);
+   font-size: 1.6rem;
+   margin-right: 5px;
+}
+.labs--list{
+    display: block;
+    padding: 8px;
+}
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+/* section comments */
+.section--comments{
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/banner3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}.section--comments::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(200deg,var(--color-important-transparent),rgba(0,0,0,0.5)) ;
+    z-index: 1;
+}
+
+.container--comments{
+    width: 90%;
+    height: 400px;
+   
+    position: relative;
+    z-index: 10;
+}
+.contItem--comments{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 0;
+    margin: 5px;
+}
+.img--comments{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 7px auto;
+    display: block;
+}
+/* ---------------------------- */
+
+.ubicacion{
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+
+}
+
+
+
+
+ /* media querie tablet extra large */
+@media screen and (min-width:700px){
+    /* section doctors */
+    .bgImg--doctor{
+        margin-top: 10px;
+    }
+    /* section labs */
+    .labs--text{
+        text-align: justify;
+    }
+    .content--item{
+     width: 50%
+    }
+    .content--labImg{
+        height: 48%;
+        height: 170px;
+    }
+    /* section comments */
+    .container--comments{
+        width: 45%;
+        height: 400px;
+    }
+
+}
+
+/* media querie deskto y laptops */
+@media screen and (min-width:1000px){
+   /* section doctors */
+   .bgImg--doctor{
+    width: 125px;
+    height: 125px;
+   }
+    
+    /* section labs */
+    .section--labs{
+        width: 100%;
+        height: 640px;
+    }
+    .content--labImg{
+        height: 48%;
+        height: 190px;
+    }
+    
+     /* section comments */
+     .container--comments{
+        width: 30%;
+        height: 400px;
+    }
+
+    .img--comments{
+        width: 110px;
+        height: 110px;
+    }
+}
+    

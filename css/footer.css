@@ -1,0 +1,106 @@
+:root{
+    --color-important: #20c997;
+    --color-important2: #f4f8fb;
+    --color-important-transparent: #20c9968f;
+    --color-transparent: rgba(0,0,0,0.3) ;
+    --color-transparent2: rgba(0,0,0,0.5) ;
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Nunito', sans-serif;
+ }
+
+ .colorPrincipal{color: #20c997; font-weight: bold;}
+
+
+ .footer{
+     width: 100%;
+     height: auto;
+     background-color: var(--color-important2);
+     margin-top: 50px;
+ }
+
+ .section--footer{
+     width: 100%;
+     height: auto;
+     padding: 35px 0;
+ }
+
+ .section--footer-item{
+     width: 95%;
+     height: 400px;
+     /* border: 1px solid gray; */
+     margin: auto;
+ }
+
+ /* --------------------------------------------------- */
+
+ .form--footer{
+     width: 85%;
+     height: auto;
+     margin: auto;
+ }
+
+ .input--footer{
+     width: 100%;
+     height: 40px;
+     border: none;
+     border-radius: 7px;
+     border: 2px solid var(--color-important);
+     background-color: #ffffff;
+     outline: none;
+ }
+
+ .input--footer:focus-visible{
+     border: 1px solid var(--color-important);
+     box-shadow: 0 0 5px var(--color-important);
+ }
+
+ .btn--footer{
+     width: 70%;
+     height: 40px;
+     border: none;
+     background-color: var(--color-important);
+     color: white;
+     border-radius: 3px;
+     font-weight: bold;
+     display: block;
+     margin: 15px auto;
+ }
+ /* ---------------------------------------- */
+
+ .container--horario{
+     width: 90%;
+     height: 270px;
+     margin: auto;
+     background-color: #20c997;
+     background-image: url("../img/calendar.jpg");
+     background-size: cover;
+    border-radius: 3px;
+ }
+ 
+ .container--horario-item{
+     width: 100%;
+     height: 240px;
+     background-color: rgba(0,0,0,0.3);
+ }
+ /* ------------------------------- */
+ .barra{
+     width: 100%;
+     height: 100px;
+     background-color: var(--color-important);
+ }
+
+/* media querie para tablets */
+ @media screen and (min-width: 700px){
+    .section--footer-item{
+        width: 33%;
+        height: 420px;
+    }
+ }
+
+ /* media querie para desktop y laptos */
+ @media screen and (min-width: 1000px){
+    .section--footer-item{
+        width: 33%;
+        height: 400px;
+    }
+}
